@@ -56,6 +56,14 @@ extension ProductsViewController: UICollectionViewDelegate,UICollectionViewDataS
         cell.configureCell(model: viewModel.products[indexPath.row])
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vm = ProductDetailsViewModel(model: viewModel.products[indexPath.row])
+        let vc = ProductDetailsViewController(viewModel: vm)
+        vc.modalTransitionStyle = .coverVertical
+        vc.modalPresentationStyle = .currentContext
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 
 extension ProductsViewController: UICollectionViewDelegateFlowLayout {
@@ -73,5 +81,3 @@ extension ProductsViewController: UICollectionViewDelegateFlowLayout {
             return 0
         }
 }
-
-

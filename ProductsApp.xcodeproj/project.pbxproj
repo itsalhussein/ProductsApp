@@ -23,6 +23,9 @@
 		19E55111294DECAB006AA699 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19E5510F294DECAB006AA699 /* ProductCell.xib */; };
 		19E55113294DEFEF006AA699 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E55112294DEFEF006AA699 /* Product.swift */; };
 		19E55116294DF72C006AA699 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E55115294DF72C006AA699 /* UIImage+Ex.swift */; };
+		19E55124294E6060006AA699 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E55122294E605F006AA699 /* ProductDetailsViewController.swift */; };
+		19E55125294E6060006AA699 /* ProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19E55123294E605F006AA699 /* ProductDetailsViewController.xib */; };
+		19E55128294E6259006AA699 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E55127294E6259006AA699 /* ProductDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		19E5510F294DECAB006AA699 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		19E55112294DEFEF006AA699 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		19E55115294DF72C006AA699 /* UIImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
+		19E55122294E605F006AA699 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		19E55123294E605F006AA699 /* ProductDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailsViewController.xib; sourceTree = "<group>"; };
+		19E55127294E6259006AA699 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1918EA55294E73C1000400B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19E55127294E6259006AA699 /* ProductDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		19E550BA294DC854006AA699 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +165,7 @@
 		19E550FE294DC8F7006AA699 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				19E55121294E603E006AA699 /* ProductDetails */,
 				19E550FF294DC8FC006AA699 /* Products */,
 			);
 			path = Scenes;
@@ -234,6 +249,24 @@
 				19E55115294DF72C006AA699 /* UIImage+Ex.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		19E55121294E603E006AA699 /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				19E55126294E6243006AA699 /* View */,
+				1918EA55294E73C1000400B2 /* ViewModel */,
+			);
+			path = ProductDetails;
+			sourceTree = "<group>";
+		};
+		19E55126294E6243006AA699 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19E55122294E605F006AA699 /* ProductDetailsViewController.swift */,
+				19E55123294E605F006AA699 /* ProductDetailsViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +375,7 @@
 			files = (
 				19E550D6294DC859006AA699 /* LaunchScreen.storyboard in Resources */,
 				19E55111294DECAB006AA699 /* ProductCell.xib in Resources */,
+				19E55125294E6060006AA699 /* ProductDetailsViewController.xib in Resources */,
 				19E550D3294DC859006AA699 /* Assets.xcassets in Resources */,
 				19E550FC294DC8EE006AA699 /* ProductsViewController.xib in Resources */,
 			);
@@ -371,8 +405,10 @@
 				19E5510D294DE012006AA699 /* ProductsResponseModel.swift in Sources */,
 				19E55113294DEFEF006AA699 /* Product.swift in Sources */,
 				19E550FB294DC8EE006AA699 /* ProductsViewController.swift in Sources */,
+				19E55124294E6060006AA699 /* ProductDetailsViewController.swift in Sources */,
 				19E550D1294DC854006AA699 /* ProductsApp.xcdatamodeld in Sources */,
 				19E55116294DF72C006AA699 /* UIImage+Ex.swift in Sources */,
+				19E55128294E6259006AA699 /* ProductDetailsViewModel.swift in Sources */,
 				19E5510B294DDE85006AA699 /* NetworkManager.swift in Sources */,
 				19E55104294DCEAE006AA699 /* ProductsViewModel.swift in Sources */,
 				19E55110294DECAB006AA699 /* ProductCell.swift in Sources */,

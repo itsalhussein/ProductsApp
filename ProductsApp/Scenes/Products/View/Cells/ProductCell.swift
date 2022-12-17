@@ -30,7 +30,7 @@ class ProductCell: UICollectionViewCell {
     
     //MARK: - Methods
     func configureCell(model: Product){
-        productPrice.text = "\(model.price)"
+        productPrice.text = "\(model.price) $"
         productDescription.text = model.description
         productImage.downloaded(from: model.image)
     }
