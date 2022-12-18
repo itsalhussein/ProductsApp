@@ -34,7 +34,7 @@ class ProductDetailsViewController: UIViewController {
     }
     
     //MARK: - Methods
-    func setupUI(){
+    private func setupUI(){
         productPrice.text = "\(viewModel.model.price) $"
         productDescription.text = viewModel.model.description
         imageHeight.constant = CGFloat(viewModel.model.imageHeight)
@@ -42,12 +42,8 @@ class ProductDetailsViewController: UIViewController {
     }
     
     fileprivate func setProductImage() {
-        let url = URL(string:viewModel.model.image)
-        if let data = try? Data(contentsOf: url!)
-        {
-            let image: UIImage = UIImage(data: data) ?? UIImage()
-            productImage.image = image
-        }
+        let imageStr = viewModel.model.image
+        productImage.image = imageStr.convertBase64StringToImage(imageBase64String: imageStr)
     }
     
     //MARK: - Actions

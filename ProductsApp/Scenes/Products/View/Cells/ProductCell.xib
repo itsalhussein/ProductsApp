@@ -50,6 +50,7 @@
             </constraints>
             <size key="customSize" width="215" height="295"/>
             <connections>
+                <outlet property="cellView" destination="f2v-YI-fjC" id="mR4-2G-pfr"/>
                 <outlet property="productDescription" destination="99T-Hi-gWp" id="Wu0-kb-MWN"/>
                 <outlet property="productImage" destination="GUb-sj-ZaN" id="qmj-9b-D7P"/>
                 <outlet property="productPrice" destination="lu0-EB-dDU" id="heU-xC-fT9"/>

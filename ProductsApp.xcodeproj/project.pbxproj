@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1918EA58294E7C5B000400B2 /* CachingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1918EA57294E7C5B000400B2 /* CachingManager.swift */; };
+		19DB61E9294F63CC00CAA359 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DB61E8294F63CC00CAA359 /* String+Ex.swift */; };
+		19DB61ED294F656C00CAA359 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DB61EC294F656B00CAA359 /* Animator.swift */; };
 		19E550C7294DC854006AA699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E550C6294DC854006AA699 /* AppDelegate.swift */; };
 		19E550D1294DC854006AA699 /* ProductsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19E550CF294DC854006AA699 /* ProductsApp.xcdatamodeld */; };
 		19E550D3294DC859006AA699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E550D2294DC859006AA699 /* Assets.xcassets */; };
@@ -22,7 +25,6 @@
 		19E55110294DECAB006AA699 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E5510E294DECAB006AA699 /* ProductCell.swift */; };
 		19E55111294DECAB006AA699 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19E5510F294DECAB006AA699 /* ProductCell.xib */; };
 		19E55113294DEFEF006AA699 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E55112294DEFEF006AA699 /* Product.swift */; };
-		19E55116294DF72C006AA699 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E55115294DF72C006AA699 /* UIImage+Ex.swift */; };
 		19E55124294E6060006AA699 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E55122294E605F006AA699 /* ProductDetailsViewController.swift */; };
 		19E55125294E6060006AA699 /* ProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19E55123294E605F006AA699 /* ProductDetailsViewController.xib */; };
 		19E55128294E6259006AA699 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E55127294E6259006AA699 /* ProductDetailsViewModel.swift */; };
@@ -46,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1918EA57294E7C5B000400B2 /* CachingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingManager.swift; sourceTree = "<group>"; };
+		19DB61E8294F63CC00CAA359 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		19DB61EC294F656B00CAA359 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		19E550C3294DC854006AA699 /* ProductsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E550C6294DC854006AA699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19E550D0294DC854006AA699 /* ProductsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductsApp.xcdatamodel; sourceTree = "<group>"; };
@@ -65,7 +70,6 @@
 		19E5510E294DECAB006AA699 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		19E5510F294DECAB006AA699 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		19E55112294DEFEF006AA699 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		19E55115294DF72C006AA699 /* UIImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
 		19E55122294E605F006AA699 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		19E55123294E605F006AA699 /* ProductDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailsViewController.xib; sourceTree = "<group>"; };
 		19E55127294E6259006AA699 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -102,6 +106,30 @@
 				19E55127294E6259006AA699 /* ProductDetailsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1918EA56294E7C3B000400B2 /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				1918EA57294E7C5B000400B2 /* CachingManager.swift */,
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
+		19DB61EA294F651700CAA359 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				19DB61E8294F63CC00CAA359 /* String+Ex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		19DB61EB294F652500CAA359 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				19DB61EC294F656B00CAA359 /* Animator.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		19E550BA294DC854006AA699 = {
@@ -203,8 +231,10 @@
 		19E55102294DC9D2006AA699 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				19E55114294DF719006AA699 /* Extensions */,
+				19DB61EB294F652500CAA359 /* Animation */,
+				1918EA56294E7C3B000400B2 /* Caching */,
 				19E55109294DDE77006AA699 /* Network */,
+				19DB61EA294F651700CAA359 /* Extensions */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -241,14 +271,6 @@
 				19E5510A294DDE85006AA699 /* NetworkManager.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		19E55114294DF719006AA699 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				19E55115294DF72C006AA699 /* UIImage+Ex.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		19E55121294E603E006AA699 /* ProductDetails */ = {
@@ -407,10 +429,12 @@
 				19E550FB294DC8EE006AA699 /* ProductsViewController.swift in Sources */,
 				19E55124294E6060006AA699 /* ProductDetailsViewController.swift in Sources */,
 				19E550D1294DC854006AA699 /* ProductsApp.xcdatamodeld in Sources */,
-				19E55116294DF72C006AA699 /* UIImage+Ex.swift in Sources */,
 				19E55128294E6259006AA699 /* ProductDetailsViewModel.swift in Sources */,
+				1918EA58294E7C5B000400B2 /* CachingManager.swift in Sources */,
 				19E5510B294DDE85006AA699 /* NetworkManager.swift in Sources */,
 				19E55104294DCEAE006AA699 /* ProductsViewModel.swift in Sources */,
+				19DB61E9294F63CC00CAA359 /* String+Ex.swift in Sources */,
+				19DB61ED294F656C00CAA359 /* Animator.swift in Sources */,
 				19E55110294DECAB006AA699 /* ProductCell.swift in Sources */,
 				19E550C7294DC854006AA699 /* AppDelegate.swift in Sources */,
 			);

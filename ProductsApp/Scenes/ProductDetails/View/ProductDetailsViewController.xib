@@ -49,7 +49,7 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fm4-ec-iRz">
-                    <rect key="frame" x="117" y="794" width="180" height="44"/>
+                    <rect key="frame" x="117" y="762" width="180" height="44"/>
                     <color key="backgroundColor" red="0.14682775740000001" green="0.29904228449999998" blue="0.32275587319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="180" id="Krd-hW-mn6"/>
@@ -71,7 +71,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7zc-Lf-kA8" secondAttribute="trailing" constant="16" id="5K8-MI-Y5L"/>
                 <constraint firstItem="7zc-Lf-kA8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="LMK-7r-cYj"/>
                 <constraint firstItem="Fm4-ec-iRz" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Wvk-CW-DVf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Fm4-ec-iRz" secondAttribute="bottom" constant="24" id="hja-lf-tP4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Fm4-ec-iRz" secondAttribute="bottom" constant="56" id="hja-lf-tP4"/>
                 <constraint firstItem="7zc-Lf-kA8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wnH-3m-Dnf"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>

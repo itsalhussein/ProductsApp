@@ -12,6 +12,7 @@ class ProductCell: UICollectionViewCell {
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productDescription: UILabel!
     @IBOutlet weak var productPrice: UILabel!
+    @IBOutlet weak var cellView: UIStackView!
     
     //MARK: - Properties
     static var identifier: String {
@@ -32,7 +33,8 @@ class ProductCell: UICollectionViewCell {
     func configureCell(model: Product){
         productPrice.text = "\(model.price) $"
         productDescription.text = model.description
-        productImage.downloaded(from: model.image)
+        let imageStr = model.image
+        productImage.image = imageStr.convertBase64StringToImage(imageBase64String: imageStr)
     }
 
 }
