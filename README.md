@@ -4,7 +4,7 @@
 * [Setup](#setup)
 
 ## General info
-This project is simple App that connects to a mock API and displays a list of products .
+Products App is a simple App that connects to a mock API and displays a list of products .
 	
 ## Technologies
 * Project is created with - Xcode version: 13.2.1
